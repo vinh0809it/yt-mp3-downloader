@@ -27,3 +27,30 @@ This tool runs locally, prompts for input when needed, and saves the MP3 file to
 ```bash
 sudo dnf install ffmpeg
 ```
+
+### Install using Go (recommended)
+
+```bash
+go install github.com/vinh0809it/yt-mp3-downloader@latest
+```
+
+Make sure Go’s bin directory is in your `PATH`:
+
+```bash
+export PATH="$PATH:$(go env GOPATH)/bin"
+source ~/.bashrc
+```
+
+### Usage
+
+Run the command:
+
+```bash
+yt-mp3
+```
+
+You will be prompted to enter a YouTube URL:
+
+```bash
+Enter YouTube URL: https://www.youtube.com/watch?v=<youtube-url>
+```
